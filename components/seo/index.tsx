@@ -4,7 +4,7 @@ import { FC } from 'react';
 const SEO: FC = () => (
   <Head>
     <title>Interface Template</title>
-    <link rel="icon" type="image/x-icon" href="/icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/icon.png" />
   </Head>
 );
 
