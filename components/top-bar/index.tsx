@@ -6,7 +6,7 @@ const TopBar: FC = () => (
   <Motion
     top="0"
     width="100vw"
-    position="fixed"
+    position="sticky"
     animate={{ opacity: 1, y: 0 }}
     initial={{ opacity: 0, y: 100 }}
     transition={{ delay: 3.5, duration: 0.5, ease: 'linear' }}

@@ -5,6 +5,7 @@ import type { FC } from 'react';
 const Hero: FC = () => (
   <Motion
     p="3rem"
+    mt="-6rem"
     gap="4rem"
     height="100vh"
     display="flex"

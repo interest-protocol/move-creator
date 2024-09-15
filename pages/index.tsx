@@ -3,7 +3,6 @@ import { NextPage } from 'next';
 import { useRef } from 'react';
 
 import { Background, MuteButton, SEO } from '@/components';
-import TopBar from '@/components/top-bar';
 import Home from '@/views/home';
 
 const HomePage: NextPage = () => {
@@ -14,7 +13,6 @@ const HomePage: NextPage = () => {
       <SEO />
       <Background ref={ref} />
       <Home />
-      <TopBar />
       <MuteButton videoRef={ref} />
     </>
   );
