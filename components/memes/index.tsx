@@ -8,7 +8,7 @@ const Memes: FC = () => (
     display="block"
     target="_blank"
     rel="noreferrer"
-    href="https://drive.google.com/drive/u/1/folders/1fc_snTVQg1X403fFur_RU0fXtfnfIXVt"
+    href="https://drive.google.com/drive/folders/1I_wiUHcAoqCL_l2R5uL7Vct5y0BwZm8Y?usp=sharing"
   >
     <Slider
       autoplay

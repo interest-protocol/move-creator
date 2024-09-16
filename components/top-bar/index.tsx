@@ -52,7 +52,12 @@ const TopBar: FC = () => (
         >
           Telegram
         </A>
-        <A href="#memes" nHover={{ color: '#9FECFE' }}>
+        <A
+          target="_blank"
+          rel="noreferrer"
+          nHover={{ color: '#9FECFE' }}
+          href="https://drive.google.com/drive/folders/1I_wiUHcAoqCL_l2R5uL7Vct5y0BwZm8Y?usp=sharing"
+        >
           Memes
         </A>
       </Nav>
@@ -94,12 +99,17 @@ const TopBar: FC = () => (
         <A
           target="_blank"
           rel="noreferrer"
-          nHover={{ color: '#9FECFE' }}
           href="http://t.me/RealMoveCreator"
+          nHover={{ color: '#9FECFE' }}
         >
           Telegram
         </A>
-        <A href="#memes" nHover={{ color: '#9FECFE' }}>
+        <A
+          target="_blank"
+          rel="noreferrer"
+          nHover={{ color: '#9FECFE' }}
+          href="https://drive.google.com/drive/folders/1I_wiUHcAoqCL_l2R5uL7Vct5y0BwZm8Y?usp=sharing"
+        >
           Memes
         </A>
       </Nav>
