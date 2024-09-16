@@ -1,14 +1,14 @@
 import { Motion } from '@interest-protocol/ui-kit';
 import { A, Button, Div, H1, Header, Img, Nav } from '@stylin.js/elements';
-import type { FC } from 'react';
+import { type FC } from 'react';
 
 const TopBar: FC = () => (
   <Motion
     top="0"
     width="100vw"
-    position="sticky"
     animate={{ opacity: 1, y: 0 }}
     initial={{ opacity: 0, y: 100 }}
+    position={['static', 'static', 'sticky']}
     transition={{ delay: 3.5, duration: 0.5, ease: 'linear' }}
   >
     <Header

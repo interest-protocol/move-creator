@@ -130,7 +130,7 @@ const Content: FC = () => (
         </Div>
       </Article>
     </Section>
-    <Section py="3rem" opacity="0.6">
+    <Section py="3rem">
       <Memes />
     </Section>
   </Div>
