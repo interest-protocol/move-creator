@@ -17,23 +17,23 @@ const Memes: FC = () => (
     autoplaySpeed={2000}
   >
     {[
-      'Sam-a-suicun1-min.webp',
-      'Sam-on-bar-min.webp',
-      'Sam-on-bar2-min.webp',
-      'Sam-retardo-min.webp',
-      'Sam-rich1-min.webp',
-      'Sam-simple-cryorange-min.webp',
-      'Sam-simple-sandwish2-min.webp',
-      'Sam-sstrong-man-min.webp',
-      'Samsurf1-min.webp',
+      'Sam-a-suicun1',
+      'Sam-on-bar',
+      'Sam-on-bar2',
+      'Sam-retardo',
+      'Sam-rich1',
+      'Sam-simple-cryorange',
+      'Sam-simple-sandwish2',
+      'Sam-sstrong-man',
+      'Samsurf1',
     ].map((name) => (
       <Div key={unikey()}>
         <Img
           mx="1rem"
-          alt="Sam fun"
+          alt={name}
           width="10rem"
-          src={`/img/${name}`}
           borderRadius="0.75rem"
+          src={`/img/${name}-min.webp`}
         />
       </Div>
     ))}
