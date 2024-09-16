@@ -23,7 +23,10 @@ const Content: FC = () => (
       p={['1rem', '3rem']}
       gridTemplateColumns={['1fr', '1fr', '1fr', '1fr 1fr']}
     >
-      <Article position="relative">
+      <Article
+        position="relative"
+        width={['calc(100% - 2rem)', 'calc(100% - 2rem)', 'unset']}
+      >
         <Div inset="0" display="flex" position="absolute" alignItems="stretch">
           <CardBorder />
         </Div>
@@ -34,6 +37,7 @@ const Content: FC = () => (
           display="flex"
           borderRadius="0.75rem"
           flexDirection="column"
+          height="calc(100% - 2rem)"
           backdropFilter="blur(30px)"
           background="linear-gradient(86.16deg, #aaa5 11.14%, #8883 113.29%)"
         >
@@ -53,12 +57,12 @@ const Content: FC = () => (
           </P>
           <Button
             all="unset"
-            py="1rem"
-            px="6rem"
+            p="1rem"
             bg="#9FECFE"
+            width="15rem"
             cursor="pointer"
             fontWeight="600"
-            justifySelf="end"
+            textAlign="center"
             alignSelf="center"
             borderRadius="0.625rem"
           >
@@ -66,7 +70,10 @@ const Content: FC = () => (
           </Button>
         </Div>
       </Article>
-      <Article position="relative">
+      <Article
+        position="relative"
+        width={['calc(100% - 2rem)', 'calc(100% - 2rem)', 'unset']}
+      >
         <Div inset="0" display="flex" position="absolute" alignItems="stretch">
           <CardBorder />
         </Div>
@@ -78,6 +85,7 @@ const Content: FC = () => (
           display="flex"
           borderRadius="0.75rem"
           flexDirection="column"
+          height="calc(100% - 2rem)"
           backdropFilter="blur(30px)"
           background="linear-gradient(86.16deg, rgba(255, 255, 255, 0.3) 11.14%, rgba(255, 255, 255, 0.1) 113.29%)"
         >
@@ -90,7 +98,12 @@ const Content: FC = () => (
           <P fontSize="1.25rem" lineHeight="2rem" color="#ffffff">
             Supply: 1.000.000.000
           </P>
-          <P display="flex" gap="1rem" alignItems="center">
+          <P
+            display="flex"
+            gap={['0.25rem', '0.25rem', '1rem']}
+            flexDirection={['column', 'column', 'row']}
+            alignItems={['flex-start', 'flex-start', 'center']}
+          >
             <Strong color="#9FECFC" fontSize="2.25rem">
               50%
             </Strong>
@@ -98,7 +111,12 @@ const Content: FC = () => (
               Initial Liquidity
             </Span>
           </P>
-          <P display="flex" gap="1rem" alignItems="center">
+          <P
+            display="flex"
+            gap={['0.25rem', '0.25rem', '1rem']}
+            flexDirection={['column', 'column', 'row']}
+            alignItems={['flex-start', 'flex-start', 'center']}
+          >
             <Strong color="#9FECFC" fontSize="2.25rem">
               40%
             </Strong>
@@ -106,7 +124,12 @@ const Content: FC = () => (
               Sent to sam@stashed (Sam Blackshear’s Stashed Subname)
             </Span>
           </P>
-          <P display="flex" gap="1rem" alignItems="center">
+          <P
+            display="flex"
+            gap={['0.25rem', '0.25rem', '1rem']}
+            flexDirection={['column', 'column', 'row']}
+            alignItems={['flex-start', 'flex-start', 'center']}
+          >
             <Strong color="#9FECFC" fontSize="2.25rem">
               10%
             </Strong>
@@ -116,12 +139,12 @@ const Content: FC = () => (
           </P>
           <Button
             all="unset"
-            py="1rem"
-            px="6rem"
+            p="1rem"
             bg="#9FECFE"
+            width="15rem"
             cursor="pointer"
             fontWeight="600"
-            justifySelf="end"
+            textAlign="center"
             alignSelf="center"
             borderRadius="0.625rem"
           >
