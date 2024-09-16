@@ -4,7 +4,18 @@ import Slider from 'react-slick';
 import unikey from 'unikey';
 
 const Memes: FC = () => (
-  <Slider infinite autoplay slidesToShow={6} slidesToScroll={1} arrows={false}>
+  <Slider
+    autoplay
+    infinite
+    centerMode
+    dots={false}
+    speed={2000}
+    variableWidth
+    arrows={false}
+    cssEase="linear"
+    slidesToScroll={1}
+    autoplaySpeed={2000}
+  >
     {[
       'Sam-a-suicun1-min.webp',
       'Sam-on-bar-min.webp',
@@ -18,9 +29,10 @@ const Memes: FC = () => (
     ].map((name) => (
       <Div key={unikey()}>
         <Img
-          src={`/img/${name}`}
+          mx="1rem"
           alt="Sam fun"
           width="10rem"
+          src={`/img/${name}`}
           borderRadius="0.75rem"
         />
       </Div>

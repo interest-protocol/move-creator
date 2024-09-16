@@ -14,13 +14,14 @@ import Memes from '../memes';
 import CardBorder from '../svg/card-border';
 
 const Content: FC = () => (
-  <Div minHeight="100vh" mt="8rem" p="3rem">
+  <Div minHeight="100vh" mt="3rem" pt="8rem" id="memes">
     <Section
       mx="auto"
       gap="2rem"
       display="grid"
       maxWidth="69rem"
-      gridTemplateColumns="1fr 1fr"
+      p={['1rem', '3rem']}
+      gridTemplateColumns={['1fr', '1fr', '1fr', '1fr 1fr']}
     >
       <Article position="relative">
         <Div inset="0" display="flex" position="absolute" alignItems="stretch">
@@ -34,7 +35,7 @@ const Content: FC = () => (
           borderRadius="0.75rem"
           flexDirection="column"
           backdropFilter="blur(30px)"
-          background="linear-gradient(86.16deg, rgba(255, 255, 255, 0.3) 11.14%, rgba(255, 255, 255, 0.1) 113.29%)"
+          background="linear-gradient(86.16deg, #aaa5 11.14%, #8883 113.29%)"
         >
           <H3 color="#9FECFE" fontSize="2.25rem">
             MOVE CREATOR
@@ -72,11 +73,12 @@ const Content: FC = () => (
         <Div
           m="1rem"
           p="2rem"
+          bg="#0006"
           gap="2rem"
           display="flex"
           borderRadius="0.75rem"
           flexDirection="column"
-          backdropFilter="blur(20px)"
+          backdropFilter="blur(30px)"
           background="linear-gradient(86.16deg, rgba(255, 255, 255, 0.3) 11.14%, rgba(255, 255, 255, 0.1) 113.29%)"
         >
           <H3 color="#9FECFE" fontSize="2.25rem">
@@ -128,7 +130,7 @@ const Content: FC = () => (
         </Div>
       </Article>
     </Section>
-    <Section my="2rem" opacity="0.6">
+    <Section py="3rem" opacity="0.6">
       <Memes />
     </Section>
   </Div>

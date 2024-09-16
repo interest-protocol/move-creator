@@ -12,10 +12,10 @@ const TopBar: FC = () => (
     transition={{ delay: 3.5, duration: 0.5, ease: 'linear' }}
   >
     <Header
-      p="3rem"
       display="grid"
       alignItems="center"
-      gridTemplateColumns="1fr 1fr 1fr"
+      p={['1.5rem 1rem', '3rem']}
+      gridTemplateColumns={['1fr 1fr', '1fr 1fr', '1fr 1fr 1fr']}
     >
       <Div gap="1rem" display="flex" alignItems="center">
         <Img src="/icon.png" width="3rem" alt="Move Creator" />
@@ -28,13 +28,13 @@ const TopBar: FC = () => (
         px="2rem"
         gap="2rem"
         bg="#ffffff11"
-        display="flex"
         color="#ffffff"
         alignItems="center"
         justifySelf="center"
         borderRadius="3rem"
         justifyContent="center"
         backdropFilter="blur(7.5px)"
+        display={['none', 'none', 'flex']}
       >
         <A
           target="_blank"
@@ -48,7 +48,7 @@ const TopBar: FC = () => (
           target="_blank"
           rel="noreferrer"
           nHover={{ color: '#9FECFE' }}
-          href="https://t.com/MoveCreator"
+          href="http://t.me/RealMoveCreator"
         >
           Telegram
         </A>
@@ -69,6 +69,41 @@ const TopBar: FC = () => (
         Buy now
       </Button>
     </Header>
+    <Div display="flex" justifyContent="center">
+      <Nav
+        py="1rem"
+        px="2rem"
+        gap="2rem"
+        width="auto"
+        bg="#ffffff11"
+        color="#ffffff"
+        alignItems="center"
+        borderRadius="3rem"
+        justifyContent="center"
+        backdropFilter="blur(7.5px)"
+        display={['flex', 'flex', 'none']}
+      >
+        <A
+          target="_blank"
+          rel="noreferrer"
+          nHover={{ color: '#9FECFE' }}
+          href="https://x.com/MoveCreator"
+        >
+          X
+        </A>
+        <A
+          target="_blank"
+          rel="noreferrer"
+          nHover={{ color: '#9FECFE' }}
+          href="http://t.me/RealMoveCreator"
+        >
+          Telegram
+        </A>
+        <A href="#memes" nHover={{ color: '#9FECFE' }}>
+          Memes
+        </A>
+      </Nav>
+    </Div>
   </Motion>
 );
 

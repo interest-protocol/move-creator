@@ -17,8 +17,8 @@ const Hero: FC = () => (
     transition={{ delay: 4.25, duration: 0.5, ease: 'easeOut' }}
   >
     <H2
-      width="22ch"
       color="#fff"
+      width="20.5ch"
       fontSize="7vw"
       fontWeight="400"
       textAlign="center"
