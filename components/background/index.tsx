@@ -7,6 +7,7 @@ const Background = forwardRef<VideoElementProps>((_, ref) => (
     muted
     autoPlay
     ref={ref}
+    playsInline
     width="100vw"
     height="100vh"
     objectFit="cover"
