@@ -3,16 +3,16 @@ import { Button, Div, P } from '@stylin.js/elements';
 import { type FC, useState } from 'react';
 
 import { MutedSVG, UnmutedSVG } from '../svg';
+import type { MuteButtonProps } from './mute-button.types';
 
-const MuteButton: FC = () => {
+const MuteButton: FC<MuteButtonProps> = ({ videoRef }) => {
   const [muted, setMuted] = useState(true);
   const [firstTime, setFirstTime] = useState(true);
 
   const toggleMute = () => {
-    const video = document.querySelector('video');
-    if (video) {
-      setMuted(!video.muted);
-      video.muted = !video.muted;
+    if (videoRef.current) {
+      setMuted(!videoRef.current.muted);
+      videoRef.current.muted = !videoRef.current.muted;
       if (firstTime) setFirstTime(false);
     }
   };
