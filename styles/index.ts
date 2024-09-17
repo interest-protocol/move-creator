@@ -99,4 +99,11 @@ export const GlobalStyles = css`
     color: inherit;
     text-decoration: none;
   }
+
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+  }
 `;

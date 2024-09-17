@@ -1,21 +1,11 @@
-import { Video, VideoElementProps } from '@stylin.js/elements';
-import { forwardRef } from 'react';
+import { FC } from 'react';
 
-const Background = forwardRef<VideoElementProps>((_, ref) => (
-  <Video
-    loop
-    muted
-    autoPlay
-    ref={ref}
-    playsInline
-    width="100vw"
-    height="100vh"
-    objectFit="cover"
-    position="absolute"
-    src="/video/bg.webm"
+const Background: FC = () => (
+  <div
+    dangerouslySetInnerHTML={{
+      __html: `<video loop muted autoPlay id="video" playsInline src="/video/bg.webm" />`,
+    }}
   />
-));
-
-Background.displayName = 'Background';
+);
 
 export default Background;
