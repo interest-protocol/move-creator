@@ -11,7 +11,7 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 
 import { TOAST_DURATION } from '@/constants';
 
-import { TerminalGlobalStyles } from '../../styles';
+import { TerminalGlobalStyles } from '../styles';
 
 const ThemeManager: FC<PropsWithChildren> = ({ children }) => (
   <InterestThemeProvider theme={lightTheme}>
