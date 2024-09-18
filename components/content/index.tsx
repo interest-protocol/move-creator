@@ -48,7 +48,7 @@ const Content: FC = () => (
             A Tribute to the One True Move God - Sam {'"Big Brain"'} Blackshear!
             Tired of impostors claiming {"Sam's"} throne as the master of the
             Move programming language? So are we! Move Creator is here to keep
-            {"Sam's"} legacy intact and stop any wannabe-Craig Wrights from
+            {" Sam's"} legacy intact and stop any wannabe-Craig Wrights from
             stealing the spotlight.
           </P>
           <P fontSize="1.25rem" color="#ffffff" lineHeight="2rem">

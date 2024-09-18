@@ -26,7 +26,7 @@ const Memes: FC = () => (
         'Sam-a-suicun1',
         'Sam-on-bar',
         'Sam-on-bar2',
-        'Sam-retardo',
+        'sam-retardo',
         'Sam-rich1',
         'Sam-simple-cryorange',
         'Sam-simple-sandwish2',
