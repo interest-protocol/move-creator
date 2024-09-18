@@ -1,4 +1,4 @@
-import { Motion } from '@interest-protocol/ui-kit';
+import { Modal, Motion } from '@interest-protocol/ui-kit';
 import { SUI_TYPE_ARG } from '@mysten/sui/utils';
 import { Button, ButtonProps } from '@stylin.js/elements';
 import dynamic from 'next/dynamic';
@@ -31,42 +31,31 @@ const BuyNow: FC<ButtonProps> = (props) => {
       >
         Buy now
       </Button>
-      {open && (
-        <Motion
-          inset="0"
-          bg="#0003"
-          width="100vw"
-          height="100vh"
-          display="flex"
-          position="fixed"
-          alignItems="center"
-          justifyContent="center"
+      <Modal custom isOpen={open} onClose={() => setOpen(false)}>
+        <Button
+          all="unset"
+          top="1rem"
+          right="1rem"
+          bg="#9FECFE"
+          width="3rem"
+          height="3rem"
+          cursor="pointer"
+          fontWeight="600"
+          textAlign="center"
+          borderRadius="50%"
+          position="absolute"
+          onClick={() => setOpen(false)}
         >
-          <Button
-            all="unset"
-            top="1rem"
-            right="1rem"
-            bg="#9FECFE"
-            width="3rem"
-            height="3rem"
-            cursor="pointer"
-            fontWeight="600"
-            textAlign="center"
-            borderRadius="50%"
-            position="absolute"
-            onClick={() => setOpen(false)}
-          >
-            <TimesSVG maxWidth="0.85rem" maxHeight="0.85rem" width="100%" />
-          </Button>
-          <Motion
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7 }}
-          >
-            <SwapInterface fixedOut typeIn={SUI_TYPE_ARG} typeOut={CA} />
-          </Motion>
+          <TimesSVG maxWidth="0.85rem" maxHeight="0.85rem" width="100%" />
+        </Button>
+        <Motion
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <SwapInterface fixedOut typeIn={SUI_TYPE_ARG} typeOut={CA} />
         </Motion>
-      )}
+      </Modal>
     </>
   );
 };

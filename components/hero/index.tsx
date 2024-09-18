@@ -37,15 +37,15 @@ const Hero: FC = () => (
       display="flex"
       color="#ffffff"
       cursor="pointer"
-      onClick={() => {
-        window.navigator.clipboard.writeText(CA);
-        toast('Copied!');
-      }}
       alignItems="center"
       justifySelf="center"
       borderRadius="3rem"
       justifyContent="center"
       backdropFilter="blur(7.5px)"
+      onClick={() => {
+        window.navigator.clipboard.writeText(CA);
+        toast('Copied!');
+      }}
     >
       <P display="flex">
         <Span
