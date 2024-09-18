@@ -9,7 +9,6 @@ import {
 } from '@stylin.js/elements';
 import { FC } from 'react';
 
-import BuyNow from '../buy-now';
 import Memes from '../memes';
 import CardBorder from '../svg/card-border';
 
@@ -44,23 +43,29 @@ const Content: FC = () => (
           <H3 color="#9FECFE" fontSize="2.25rem">
             MOVE CREATOR
           </H3>
-          <P fontSize="1.25rem" lineHeight="2rem" color="#ffffff">
+          <P
+            color="#ffffff"
+            lineHeight="2rem"
+            fontSize="1.25rem"
+            textAlign="justify"
+            textJustify="inter-character"
+          >
             A Tribute to the One True Move God - Sam {'"Big Brain"'} Blackshear!
             Tired of impostors claiming {"Sam's"} throne as the master of the
             Move programming language? So are we! Move Creator is here to keep
             {" Sam's"} legacy intact and stop any wannabe-Craig Wrights from
             stealing the spotlight.
           </P>
-          <P fontSize="1.25rem" color="#ffffff" lineHeight="2rem">
+          <P
+            color="#ffffff"
+            lineHeight="2rem"
+            fontSize="1.25rem"
+            textAlign="justify"
+            textJustify="inter-character"
+          >
             {"Who's"} behind this? Just a bunch of Sui chads on a mission to
             protect {"Sam's"} reign, while having a blast doing it.
           </P>
-          <BuyNow
-            p="1rem"
-            width="15rem"
-            alignSelf="center"
-            borderRadius="0.625rem"
-          />
         </Div>
       </Article>
       <Article
@@ -130,7 +135,6 @@ const Content: FC = () => (
               Team and Operational Costs. (Locked for 6 months.)
             </Span>
           </P>
-          <BuyNow all="unset" p="1rem" width="15rem" alignSelf="center" />
         </Div>
       </Article>
     </Section>
