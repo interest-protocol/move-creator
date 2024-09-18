@@ -2,7 +2,7 @@ import { Motion } from '@interest-protocol/ui-kit';
 import { Div } from '@stylin.js/elements';
 import { FC } from 'react';
 
-import { Layout, PageContent } from '@/components';
+import { Layout, PageContent } from '../../components';
 
 const Home: FC = () => (
   <Layout>

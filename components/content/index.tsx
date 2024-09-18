@@ -1,6 +1,5 @@
 import {
   Article,
-  Button,
   Div,
   H3,
   P,
@@ -10,6 +9,7 @@ import {
 } from '@stylin.js/elements';
 import { FC } from 'react';
 
+import BuyNow from '../buy-now';
 import Memes from '../memes';
 import CardBorder from '../svg/card-border';
 
@@ -55,19 +55,12 @@ const Content: FC = () => (
             {"Who's"} behind this? Just a bunch of Sui chads on a mission to
             protect {"Sam's"} reign, while having a blast doing it.
           </P>
-          <Button
-            all="unset"
+          <BuyNow
             p="1rem"
-            bg="#9FECFE"
             width="15rem"
-            cursor="pointer"
-            fontWeight="600"
-            textAlign="center"
             alignSelf="center"
             borderRadius="0.625rem"
-          >
-            Buy now
-          </Button>
+          />
         </Div>
       </Article>
       <Article
@@ -137,19 +130,7 @@ const Content: FC = () => (
               Team and Operational Costs. (Locked for 6 months.)
             </Span>
           </P>
-          <Button
-            all="unset"
-            p="1rem"
-            bg="#9FECFE"
-            width="15rem"
-            cursor="pointer"
-            fontWeight="600"
-            textAlign="center"
-            alignSelf="center"
-            borderRadius="0.625rem"
-          >
-            Buy now
-          </Button>
+          <BuyNow all="unset" p="1rem" width="15rem" alignSelf="center" />
         </Div>
       </Article>
     </Section>

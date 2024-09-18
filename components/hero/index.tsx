@@ -1,6 +1,8 @@
 import { Motion } from '@interest-protocol/ui-kit';
-import { Button, H2 } from '@stylin.js/elements';
+import { H2 } from '@stylin.js/elements';
 import type { FC } from 'react';
+
+import BuyNow from '../buy-now';
 
 const Hero: FC = () => (
   <Motion
@@ -25,18 +27,7 @@ const Hero: FC = () => (
     >
       {"Let's"} set the record straight, I am the Creator of Move!
     </H2>
-    <Button
-      all="unset"
-      px="4rem"
-      bg="#9FECFE"
-      py="0.825rem"
-      cursor="pointer"
-      fontWeight="600"
-      justifySelf="end"
-      borderRadius="0.625rem"
-    >
-      Buy now
-    </Button>
+    <BuyNow all="unset" px="4rem" py="0.825rem" justifySelf="end" />
   </Motion>
 );
 

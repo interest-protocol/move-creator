@@ -1,6 +1,8 @@
 import { Motion } from '@interest-protocol/ui-kit';
-import { A, Button, Div, H1, Header, Img, Nav } from '@stylin.js/elements';
+import { A, Div, H1, Header, Img, Nav } from '@stylin.js/elements';
 import { type FC } from 'react';
+
+import BuyNow from '../buy-now';
 
 const TopBar: FC = () => (
   <Motion
@@ -61,18 +63,7 @@ const TopBar: FC = () => (
           Memes
         </A>
       </Nav>
-      <Button
-        all="unset"
-        px="1.5rem"
-        py="0.825rem"
-        bg="#9FECFE"
-        cursor="pointer"
-        fontWeight="600"
-        justifySelf="end"
-        borderRadius="0.625rem"
-      >
-        Buy now
-      </Button>
+      <BuyNow all="unset" px="1.5rem" py="0.825rem" justifySelf="end" />
     </Header>
     <Div display="flex" justifyContent="center">
       <Nav
