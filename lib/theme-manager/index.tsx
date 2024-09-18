@@ -1,6 +1,5 @@
 import 'react-loading-skeleton/dist/skeleton.css';
 
-import { Global } from '@emotion/react';
 import {
   lightTheme,
   ThemeProvider as InterestThemeProvider,
@@ -11,11 +10,8 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 
 import { TOAST_DURATION } from '@/constants';
 
-import { TerminalGlobalStyles } from '../styles';
-
 const ThemeManager: FC<PropsWithChildren> = ({ children }) => (
   <InterestThemeProvider theme={lightTheme}>
-    <Global styles={TerminalGlobalStyles} />
     <Toaster
       position="top-center"
       reverseOrder={false}
