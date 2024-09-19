@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@hookform/resolvers": "^3.3.2",
     "@hop.ag/sdk": "^3.1.7",
     "@interest-protocol/dca-sdk": "^3.1.1",
     "@interest-protocol/sui-tokens": "^1.12.1",

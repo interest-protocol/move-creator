@@ -58,12 +58,12 @@ export const SwapInterface: FC<SwapInterfaceProps> = ({
         mx="auto"
         width="25rem"
         display="flex"
-        maxHeight="95vh"
         overflowY="auto"
         bg="lowContainer"
         borderRadius="xs"
         position="relative"
         flexDirection="column"
+        maxHeight="calc(95vh - 4rem)"
       >
         <Web3Manager />
         <FormProvider {...form}>
