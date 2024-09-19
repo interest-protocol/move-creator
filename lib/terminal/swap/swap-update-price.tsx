@@ -115,20 +115,14 @@ const SwapUpdatePrice: FC = () => {
 
   const getRouterValue = (route: SwapForm['route'], aggregator: Aggregator) => {
     if (aggregator === Aggregator.Aftermath)
-      return (
-        ((FixedPointMath.toNumber(coinInValue, getValues('from.decimals')) *
-          10 ** (getValues('from.decimals') - getValues('to.decimals'))) /
-          (route as RouterCompleteTradeRoute).spotPrice) *
-        (1 - EXCHANGE_FEE)
-      ).toPrecision(6);
+      return coinInValue
+        .div((route as RouterCompleteTradeRoute).spotPrice)
+        .times(1 - EXCHANGE_FEE);
 
     if (aggregator === Aggregator.Hop)
-      return FixedPointMath.toNumber(
-        BigNumber((route as JSONQuoteResponse).amount_out_with_fee),
-        getValues('to.decimals')
-      ).toPrecision(6);
+      return BigNumber((route as JSONQuoteResponse).amount_out_with_fee);
 
-    return '0';
+    return ZERO_BIG_NUMBER;
   };
 
   const getRouteValue = async () => {
@@ -195,7 +189,10 @@ const SwapUpdatePrice: FC = () => {
 
       const value = await getRouteValue();
 
-      setValue('to.display', FixedPointMath.toBigNumber(value, 0).toString());
+      setValue(
+        'to.display',
+        String(FixedPointMath.toNumber(value, getValues('to.decimals')))
+      );
       setValue('lastFetchDate', Date.now());
 
       return;
