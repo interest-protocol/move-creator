@@ -23,23 +23,31 @@ const Memes: FC = () => (
       autoplaySpeed={2000}
     >
       {[
-        'Sam-a-suicun1',
-        'Sam-on-bar',
-        'Sam-on-bar2',
-        'sam-retardo',
-        'Sam-rich1',
-        'Sam-simple-cryorange',
-        'Sam-simple-sandwish2',
-        'Sam-sstrong-man',
-        'Samsurf1',
+        'banner-calm',
+        'have-no-enemis',
+        'learnig-all-the-moves',
+        'meditation',
+        'move-laguege',
+        'PFP1',
+        'sam-analysses',
+        'sam-and-fesal',
+        'sam-chill-beach',
+        'sam-focus',
+        'sam-river-master',
+        'sam-surfpro',
+        'sam-tea-houser',
+        'sam-lin',
+        'satoshi-training',
       ].map((name) => (
         <Div key={unikey()}>
           <Img
             mx="1rem"
             alt={name}
             width="10rem"
+            height="10rem"
+            objectFit="cover"
             borderRadius="0.75rem"
-            src={`/img/${name}-min.webp`}
+            src={`/img/${name}.webp`}
           />
         </Div>
       ))}
